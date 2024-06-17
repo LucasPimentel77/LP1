@@ -1,6 +1,17 @@
+package capitulo3;
 
 public class Ex_13_6 {
+
 	public static void main(String[] args) {
-		System.out.println("hello word");
+		int a=0, b=1, aux;
+		System.out.print("0 1 ");
+		while (b<100) {
+			a = a + b;
+			System.out.print(a + " ");
+			aux = a;
+			a = b;
+			b = aux;
+		}
 	}
+
 }
