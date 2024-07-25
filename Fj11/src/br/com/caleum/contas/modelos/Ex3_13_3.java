@@ -1,6 +1,6 @@
-package Capitulo03;
+package br.com.caleum.contas.modelos;
 
-public class Ex_13_3 {
+public class Ex3_13_3 {
 
 	public static void main(String[] args) {
 		int i;
