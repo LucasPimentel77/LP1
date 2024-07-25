@@ -3,7 +3,7 @@ package br.com.caleum.contas.main;
 import br.com.caleum.contas.modelos.Conta;
 
 /**
- * esse é uma classe para testar 8uma conta no banco
+ * esse é uma classe para testar uma conta no banco
  * @author lucas ds santos pimentel
  */
 
