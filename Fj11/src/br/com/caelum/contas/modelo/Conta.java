@@ -1,4 +1,4 @@
-package Capitulo05;
+package br.com.caelum.contas.modelo;
 
 public class Conta {
 	private static int identificador;
@@ -18,7 +18,7 @@ public class Conta {
 		identificador = identificador + 1;
 	}
 
-	public void sacar(int valor){
+	public void saca(double valor){
 		if (getSaldo() >= valor){
 			setSaldo(getSaldo()-valor);
 			System.out.println("saque realizado");
@@ -27,7 +27,7 @@ public class Conta {
 		}
 	}
 	
-	public void depositar(int valor) {
+	public void deposita(double valor) {
 		setSaldo(getSaldo()+valor);
 		System.out.println("deposito realixado");
 	}
