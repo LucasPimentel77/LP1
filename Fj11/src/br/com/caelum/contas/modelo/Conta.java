@@ -1,5 +1,7 @@
 package br.com.caelum.contas.modelo;
 
+import br.com.caelum.javafx.api.util.Evento;
+
 public class Conta {
 	private static int identificador;
 	private String titular;
@@ -32,9 +34,22 @@ public class Conta {
 		System.out.println("deposito realixado");
 	}
 	
+	public void transfere(Conta destino, double valor) {
+		if(getSaldo() >= valor) {
+			setSaldo(getSaldo()-valor);
+		destino.setSaldo(destino.getSaldo()+valor);;
+		System.out.println("transferencia realizada");
+		}else {
+			System.out.println("saldo insuficiente para transferencia");
+		}
+	}
 
 	public double calculaRendimento() {
 		return this.saldo*0.1;
+	}
+	
+	public String getTipo() {
+		return 	"Conta ";
 	}
 
 
